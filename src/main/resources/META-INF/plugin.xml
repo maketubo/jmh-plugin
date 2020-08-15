@@ -1,0 +1,41 @@
+<idea-plugin>
+    <id>com.github.MyEditor</id>
+    <name>百宝箱</name>
+    <vendor email="631164398@qq.com" url="https://github.com/maketubo">maketubo</vendor>
+
+    <description>
+      1.jmh微基准测试生成
+      2.基于ctrl+;的快速补全整理快捷键 todo
+      3.局域网内即时交互传递文件 todo
+      4.公网内qq微信登陆 todo
+      5.声音播放 + 看板娘 todo
+    </description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+    <extensionPoints>
+        <extensionPoint qualifiedName="com.github.jmhFramework" interface="com.github.jmh.JmhFramework"/>
+    </extensionPoints>
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationInitializedListener implementation="com.github.jmh.JmhConfigurationTypesRegistrar"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="HelloWorldActionId" class="com.github.HelloWorld" text="maketubo tools About" description="hello">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+
+        <action id="JMHGenerator" class="com.github.jmh.JmhAction" text="jmhGenerator" description="jmh">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+
+        <action id="SUPER_SEMI" class="com.github.semi.SemiAction" text="super-semi" description="分号超人">
+            <add-to-group group-id="EditorActions" anchor="first" />
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl semicolon"/>
+        </action>
+
+    </actions>
+</idea-plugin>

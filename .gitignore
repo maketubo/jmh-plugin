@@ -1,0 +1,37 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+/.idea/
+*.iml
+*.iws
+**/out
+
+# Mac
+.DS_Store
+
+# Maven
+**/log/
+**/target
+**/*.log
+**/tmp
+**/.tmp
+**/uml/
+**/bin/**
+**/overlays
+/src/main/resources/rebel.xml
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.bak
+out
+
+#SonarQUbe
+sonar-project.properties
+.sonar
+/build/
+/.gradle/

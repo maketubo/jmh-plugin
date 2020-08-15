@@ -1,0 +1,8 @@
+public static void main(String[] args) throws org.openjdk.jmh.runner.RunnerException{
+    org.openjdk.jmh.runner.options.Options opt = new org.openjdk.jmh.runner.options.OptionsBuilder()
+    .include(${currentClass}.class.getSimpleName())
+    .addProfiler("gc")
+    .output("${outputPath}")
+    .build();
+    new org.openjdk.jmh.runner.Runner(opt).run();
+}

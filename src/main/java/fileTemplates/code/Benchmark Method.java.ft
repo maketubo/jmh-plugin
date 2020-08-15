@@ -1,0 +1,4 @@
+@org.openjdk.jmh.annotations.Benchmark
+public void ${NAME}() {
+    ${BODY}
+}

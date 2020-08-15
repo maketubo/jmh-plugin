@@ -1,0 +1,4 @@
+@org.openjdk.jmh.annotations.Setup
+public void setup() {
+    ${BODY}
+}

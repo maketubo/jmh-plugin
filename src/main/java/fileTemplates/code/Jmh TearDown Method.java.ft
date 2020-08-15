@@ -1,0 +1,4 @@
+@org.openjdk.jmh.annotations.TearDown
+public void tearDown() {
+    ${BODY}
+}
