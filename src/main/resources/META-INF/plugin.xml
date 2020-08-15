@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>com.github.MyEditor</id>
-    <name>百宝箱</name>
+    <id>com.github.maketubo</id>
+    <name>jmh-generator</name>
     <vendor email="631164398@qq.com" url="https://github.com/maketubo">maketubo</vendor>
 
     <description>
